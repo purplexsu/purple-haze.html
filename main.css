@@ -1,0 +1,25 @@
+body {
+	background-image: url(images/mainback.gif);
+	margin: 0px;
+	text-align:center;
+}
+.outline{
+	width: 732px;
+	margin-left: auto;
+	margin-right: auto;
+	border-left-color: #FF6600;
+	border-right-color: #FF6600;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-width: 1px;
+	background:#FFFFFF;
+	position:relative;
+}
+.v_ads {
+	height:600px;
+	width:160px;
+	position:absolute;
+	top:35%;
+	left:733px;
+}

@@ -1,0 +1,1 @@
+<div class="snippettext">summer - 2010-11-12 09:34:20</div><div class="snippettext"><a rel="nofollow" href="blog/comment-108.html">我一定会学架子鼓的。。。很帅很man很狂野，虽然差点被狂跳的fans挤死，但看到大家那种挥汗如雨也不顾一切疯狂的架势，还是觉得很有趣的。。。</a></div>
