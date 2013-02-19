@@ -5,43 +5,39 @@ mktime(0,0,0,1,1,1970) ;
 $cmd=$_GET["cmdcmd"];
 if($cmd=="1")
 {
-  exec('find ~/www/ -name comment-*.html -print | xargs zip -g comment.zip');
+  exec('. zip.sh');
   header(sprintf("Location: %s", "comment.zip")); 
   return;
 }
 elseif($cmd=="2")
 {
-	echo system('. extract.sh');
-//  echo system('unzip -o update.zip');
- // echo exec('chmod +x index.html');
- // echo exec('chmod +x comments.html');
- // echo exec('rm -f update.zip');
+  echo system('. extract.sh');
   return;
 }
 elseif($cmd=="3")
 {
-	$tmp=$_FILES['MyFile']['tmp_name'];
-	$name=$_FILES['MyFile']['name'];
-	$flag=stristr($name,"update.zip");
-	if(strlen($flag)>0)
-	{
-		$result=copy($tmp,$name);
-		echo $result;
-		echo $_FILES['MyFile']['error'];
-	}
-	else
-	{
-		echo "no";
-	}
+  $tmp=$_FILES['MyFile']['tmp_name'];
+  $name=$_FILES['MyFile']['name'];
+  $flag=stristr($name,"update.zip");
+  if(strlen($flag)>0)
+  {
+    $result=copy($tmp,$name);
+    echo $result;
+    echo $_FILES['MyFile']['error'];
+  }
+  else
+  {
+    echo "no";
+  }
 }
 elseif($cmd=="4")
 {
-	exec('cp ~/access-logs/purplexsu.net ~/www/purplexsu.txt');
-	exec('chmod +r ~/www/purplexsu.txt');      
+  exec('cp ~/access-logs/purplexsu.net ~/www/purplexsu.txt');
+  exec('chmod +r ~/www/purplexsu.txt');      
 }
 elseif($cmd=="5")
 {
-	exec('rm ~/www/purplexsu.txt');
+  exec('rm ~/www/purplexsu.txt');
 }
 else
 {
