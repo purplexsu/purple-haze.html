@@ -263,6 +263,10 @@ div.comment_form {
 	margin:0px 0px 10px 0px;
 	background:#EFEFEF;
 }
+#captcha_img {
+  cursor: pointer;
+  vertical-align: middle;
+}
 div#TitleArea {
 	padding:0px 20px 0px 20px;
 }

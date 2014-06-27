@@ -10,9 +10,9 @@ if((strstr($_POST["comment"],"<a ")!=false) || (substr_count($_POST["comment"],"
 	header(sprintf("Location: %s", "index.html")); 
 	return;
 }
-if($_POST["capchar"] != $_SESSION["capchar"] || empty($_POST["capchar"]))
+if($_POST["captcha"] != $_SESSION["captcha"] || empty($_POST["captcha"]))
 {
-	// bad capchar
+	// bad captcha
 	header(sprintf("Location: %s", "index.html")); 
 	return;
 }
@@ -40,7 +40,7 @@ else
 	$content=fread($fr,filesize($file));
 	fclose($fr);
 	
-	$tag="InstanceBeginEditable name=\"CommentArea\" -->";
+	$tag="<div id=\"CommentArea\">";
 	$tmp="\r\n<div><a href=\"".$site."\" rel=\"nofollow\"><strong>".$id."</strong></a> - ".date("Y-m-d H:i:s")."</div>\r\n";
 	$tmp=$tmp."<div>".$comment."</div>\r\n<br />";
 	$content=str_replace($tag,$tag.$tmp,$content);
