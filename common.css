@@ -286,9 +286,11 @@ div#RelatedArticles {
 div#RelatedArticles div {
 	margin-left:30px;
 }
+div#UserArea {
+	float:right;
+}
 div#CommentLink {
 	text-align:right;
-	float:right;
 	padding:5px 0 10px 0px;
 	margin-right:20px;
 }
