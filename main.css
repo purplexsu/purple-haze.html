@@ -1,39 +1,48 @@
 body {
-	background-image: url(images/mainback.gif);
-	margin: 0px;
-	text-align:center;
+  background-image: url(images/mainback.gif);
+  color: #333333;
+  font-family: "宋体", "新宋体";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+  text-align:center;
+  text-decoration: none;
+}
+body.mobile {
+  font-size: 22px;
 }
 .outline{
-	width: 732px;
-	margin-left: auto;
-	margin-right: auto;
-	border-left-color: #FF6600;
-	border-right-color: #FF6600;
-	border-right-style: solid;
-	border-left-style: solid;
-	border-left-width: 1px;
-	border-right-width: 1px;
-	background:#FFFFFF;
-	position:relative;
+  background:#FFFFFF;
+  border-left-color: #FF6600;
+  border-right-color: #FF6600;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  text-align:left;
+  width: 800px;
 }
-.outline.pc {
-	width: 732px;
-	margin-left: auto;
-	margin-right: auto;
+.pc .outline {
+  margin-left: auto;
+  margin-right: auto;
 }
-.outline.mobile {
-	width:initial;
-	min-width: 540px;
-	margin-left: 0;
-	margin-right: 0;
+.mobile .outline {
+  width:initial;
+  min-width: 540px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .v_ads {
-	height:600px;
-	width:160px;
-	position:absolute;
-	top:35%;
-	left:733px;
+  height:600px;
+  width:160px;
+  position:absolute;
+  top:35%;
+  left:801px;
 }
 .mobile .v_ads {
-	display:none;
+  display:none;
 }
