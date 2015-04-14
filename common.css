@@ -12,7 +12,6 @@ img {
   border-width:0;
 }
 .copyright {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 10px;
   line-height: normal;
   text-decoration: none;
@@ -354,8 +353,6 @@ fieldset img{
 
 /* Caption Styles */
 #CaptionArea {
-  font-family: "宋体", "新宋体";
-  font-size: 12px;
   font-style: normal;
   text-align: center;
   text-decoration: none;
@@ -391,29 +388,21 @@ fieldset img{
   position:relative;
   margin:0 1em 2em 1em;
 }
-.appraisal_column_summary {
+.column_summary {
   clear:both;
-  padding:5px 70px 2px 70px;
-  text-align:left;
-}
-.blog_column_summary {
-  text-align:left;
-  padding:0px 30px 0px 30px;
-}
-.music_column_summary {
   line-height: 1.4em;
   margin:0 auto 0.3em auto;
-  width:39em; /* 6.5x6 */
+  width:38.5em; /* (6.5+1.2)x5 */
 }
-.music_column_header {
-  padding:10px 65px 0px 65px;
-  clear:both;
-  text-align:left;
+.pc .column_summary {
+  width:46.2em; /* (6.5+1.2)x6 */
 }
-.photo_column_summary {
+.column_summary_header {
+  clear: both;
+  font-size: 1.2em;
   line-height: 1.4em;
-  margin:0 auto 0.3em auto;
-  width:39em; /* 6.5x6 */
+  margin: 0 auto 0.3em 0;
+  text-decoration: underline;
 }
 /* Other Styles */
 .verticalspace {
