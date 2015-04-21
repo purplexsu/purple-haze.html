@@ -1,11 +1,44 @@
 body {
-	margin: 0px;
-	background-color: #000000;
-	text-align:center;
+  background-color: #000000;
+  font-family: "宋体", "新宋体";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0px;
+  text-align:center;
+}
+body.mobile {
+  font-size: 26px;
 }
 .outline{
-	width: 732px;
-	margin-left: auto;
-	margin-right: auto;
-	background: url(images/sprite.png) no-repeat 685px -200px;
+  background: url(images/sprite.png) no-repeat 803px -200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 850px;
+}
+.pc .outline {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mobile .outline {
+  margin-left: 0;
+  margin-right: 0;
+}
+.photo_arrow_l,.photo_arrow_r {
+  float:left;
+  position:relative;
+  top:-40px;
+  width:48px;
+  height:77px;
+}
+.photo_arrow_l {
+  float:left;
+  background:no-repeat url(images/sprite.png) -50px -440px;
+}
+.photo_arrow_r {
+  float:right;
+  background:no-repeat url(images/sprite.png) -98px -440px;
+}
+.photoframe {
+  height:680px;
 }

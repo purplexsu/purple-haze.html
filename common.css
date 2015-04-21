@@ -149,33 +149,6 @@ textarea {
   background: no-repeat url(images/sprite.png) -50px -195px;
   vertical-align: bottom;
 }
-/* Menu Styles */
-#MainMenu {
-  color: #FFFFFF;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: right;
-  padding: 0.2em 1em 0.2em 0;
-  background-color: #CCCCCC;
-  border-bottom-width: 6px;
-  border-bottom-style: solid;
-  border-bottom-color: #FF6600;
-}
-#MainMenu li {
-  text-decoration: none;
-  display: inline;
-  line-height: 1em;
-  padding: 0.5em;
-}
-#MainMenu ul {
-  text-decoration: none;
-  display: inline;
-  line-height: 14px;
-  padding-right: 10px;
-}
-#MainMenu .selected {
-  background-color:#333;
-}
 /* Title Styles */
 h1 {
   color: #000000;
@@ -287,7 +260,7 @@ div#ArticleArea {
   background-color: #FFFFFF;
   clear: both;
   margin:1em 0;
-  padding: 0 1em;
+  padding: 0 25px;
   width:auto;
 }
 fieldset#ArticleIndex {
@@ -332,24 +305,6 @@ fieldset img{
   display: inline;
   padding: 0px 5px;
 }
-.photo_arrow_l,.photo_arrow_r {
-  float:left;
-  position:relative;
-  top:-40px;
-  width:48px;
-  height:77px;
-}
-.photo_arrow_l {
-  float:left;
-  background:no-repeat url(images/sprite.png) -50px -440px;
-}
-.photo_arrow_r {
-  float:right;
-  background:no-repeat url(images/sprite.png) -98px -440px;
-}
-.photoframe {
-  height:580px;
-}
 
 /* Caption Styles */
 #CaptionArea {
@@ -391,11 +346,10 @@ fieldset img{
 .column_summary {
   clear:both;
   line-height: 1.4em;
-  margin:0 auto 0.3em auto;
-  width:38.5em; /* (6.5+1.2)x5 */
+  margin:0 1em 0.3em 1em;
 }
 .pc .column_summary {
-  width:46.2em; /* (6.5+1.2)x6 */
+  margin:0 5.4em 0.3em 5.4em;
 }
 .column_summary_header {
   clear: both;

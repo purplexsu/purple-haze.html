@@ -10,7 +10,7 @@ body {
   text-decoration: none;
 }
 body.mobile {
-  font-size: 22px;
+  font-size: 24px;
 }
 .outline{
   background:#FFFFFF;
@@ -31,10 +31,11 @@ body.mobile {
   margin-right: auto;
 }
 .mobile .outline {
-  width:initial;
-  min-width: 540px;
   margin-left: 0;
   margin-right: 0;
+}
+.h_ads {
+  text-align:center;
 }
 .v_ads {
   height:600px;
@@ -45,4 +46,31 @@ body.mobile {
 }
 .mobile .v_ads {
   display:none;
+}
+/* Menu Styles */
+#MainMenu {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: right;
+  padding: 0.2em 1em 0.2em 0;
+  background-color: #CCCCCC;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  border-bottom-color: #FF6600;
+}
+#MainMenu li {
+  text-decoration: none;
+  display: inline;
+  line-height: 1em;
+  padding: 0.3em;
+}
+#MainMenu ul {
+  text-decoration: none;
+  display: inline;
+  line-height: 14px;
+  padding-right: 10px;
+}
+#MainMenu .selected {
+  background-color:#333;
 }
