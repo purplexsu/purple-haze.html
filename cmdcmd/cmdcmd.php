@@ -5,13 +5,13 @@ mktime(0,0,0,1,1,1970) ;
 $cmd=$_GET["cmdcmd"];
 if($cmd=="1")
 {
-  exec('. zip.sh');
+  exec('/home/purpl24/public_html/cmdcmd/zip.sh');
   header(sprintf("Location: %s", "comment.zip")); 
   return;
 }
 elseif($cmd=="2")
 {
-  echo system('. extract.sh');
+  echo system('/home/purpl24/public_html/cmdcmd/extract.sh');
   return;
 }
 elseif($cmd=="3")
@@ -41,9 +41,12 @@ elseif($cmd=="5")
 }
 else
 {
-?><html>
+?>
+<html>
 <body>
-<ol><li>backup comment</li><li>extract the update</li>
+<ol>
+<li>backup comment</li>
+<li>extract the update</li>
 </ol>
 <?php echo date("Y-m-d H:i:s");?>
   </body>

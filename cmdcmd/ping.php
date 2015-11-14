@@ -9,8 +9,9 @@ function submitPing(){
 $server_ping=array(
 array('host'=>'blogsearch.google.com','path'=>'/ping/RPC2'),
 array('host'=>'rpc.technorati.com','path'=>'/rpc/ping'),
-array('host'=>'rpc.weblogs.com','path'=>'/RPC2')
-// array('host'=>'api.my.yahoo.com','path'=>'/RPC2'),
+array('host'=>'rpc.weblogs.com','path'=>'/RPC2'),
+array('host'=>'xianguo.com','path'=>'/xmlrpc/ping.php'),
+array('host'=>'www.xianguo.com','path'=>'/xmlrpc/ping.php')
 );
 $s1='<param><value><string>';
 $s2='</string></value></param>';
