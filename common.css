@@ -188,6 +188,10 @@ div#ColumnHeader h2 {
   letter-spacing: 0.05em;
   line-height:1.8em;
 }
+.article_text>span {
+  display:inline-block;
+  text-indent:2em;
+}
 div.comment_form,div#CommentArea{
   line-height: 22px;
   overflow:hidden;
