@@ -189,7 +189,7 @@ div#ColumnHeader h2 {
   line-height:1.8em;
 }
 .article_text>span {
-  display:inline-block;
+  display:block;
   text-indent:2em;
 }
 div.comment_form,div#CommentArea{
